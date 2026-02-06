@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Counting Down to You</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="scene" aria-live="polite">
+    <section class="card" id="content" aria-hidden="true">
+      <p class="eyebrow">Monday • February 9, 2026 • 10:00 AM CT</p>
+      <h1>Counting Down Until You’re Here</h1>
+      <p class="subhead">Every second is a little closer to a hug I’ve been waiting for.</p>
+
+      <div class="countdown" id="countdown">
+        <div class="unit">
+          <span class="value" id="days">00</span>
+          <span class="label">Days</span>
+        </div>
+        <div class="unit">
+          <span class="value" id="hours">00</span>
+          <span class="label">Hours</span>
+        </div>
+        <div class="unit">
+          <span class="value" id="minutes">00</span>
+          <span class="label">Minutes</span>
+        </div>
+        <div class="unit">
+          <span class="value" id="seconds">00</span>
+          <span class="label">Seconds</span>
+        </div>
+      </div>
+
+      <blockquote class="quote">“The best thing to hold onto in life is each other.”</blockquote>
+      <p class="credit">— Audrey Hepburn</p>
+
+      <p class="note" id="note">I’m right here, waiting.</p>
+    </section>
+  </main>
+
+  <div class="veil" id="veil" role="dialog" aria-modal="true" aria-labelledby="password-title">
+    <form class="gate" id="gate">
+      <h2 id="password-title">A little secret</h2>
+      <p>Enter the password to see the countdown.</p>
+      <label for="password">Password</label>
+      <input id="password" name="password" type="password" autocomplete="off" required />
+      <button type="submit">Unlock</button>
+      <p class="hint" id="hint">Hint: it’s the word you call her when you smile.</p>
+      <p class="error" id="error" role="alert"></p>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
