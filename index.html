@@ -7,39 +7,51 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <div class="aura" aria-hidden="true"></div>
   <div class="hearts" aria-hidden="true">
     <span></span><span></span><span></span><span></span><span></span><span></span>
   </div>
   <main class="scene" aria-live="polite">
     <section class="card" id="content" aria-hidden="true">
+      <div class="seal" aria-hidden="true">For You</div>
+      <div class="halo" aria-hidden="true"></div>
       <p class="eyebrow reveal" data-delay="0ms">Monday • February 9, 2026 • 10:00 AM CT</p>
-      <h1 class="reveal" data-delay="120ms">Counting Down Until You’re Here</h1>
-      <p class="subhead reveal" data-delay="220ms">Every second is a little closer to a hug I’ve been waiting for, <span class="name" id="loverName">my love</span>.</p>
-      <p class="whisper reveal" data-delay="320ms"><span class="name" id="loverNameWhisper">My love</span>, you are my favorite thought.</p>
-
-      <div class="countdown reveal" id="countdown" data-delay="420ms">
-        <div class="unit">
-          <span class="value" id="days">00</span>
-          <span class="label">Days</span>
+      <div class="hero-grid">
+        <div class="hero-text">
+          <h1 class="reveal" data-delay="120ms">Counting Down Until You’re Here</h1>
+          <p class="subhead reveal" data-delay="220ms">Every second is a little closer to a hug I’ve been waiting for, <span class="name" id="loverName">my love</span>.</p>
+          <p class="whisper reveal" data-delay="320ms"><span class="name" id="loverNameWhisper">My love</span>, you are my favorite thought.</p>
+          <div class="countdown reveal" id="countdown" data-delay="420ms">
+            <div class="unit">
+              <span class="value" id="days">00</span>
+              <span class="label">Days</span>
+            </div>
+            <div class="unit">
+              <span class="value" id="hours">00</span>
+              <span class="label">Hours</span>
+            </div>
+            <div class="unit">
+              <span class="value" id="minutes">00</span>
+              <span class="label">Minutes</span>
+            </div>
+            <div class="unit">
+              <span class="value" id="seconds">00</span>
+              <span class="label">Seconds</span>
+            </div>
+          </div>
+          <div class="love-letter reveal" data-delay="520ms">
+            <p>From the moment I wake up to the moment I close my eyes, it’s always you. I’m counting every heartbeat until I get to hold you.</p>
+          </div>
         </div>
-        <div class="unit">
-          <span class="value" id="hours">00</span>
-          <span class="label">Hours</span>
-        </div>
-        <div class="unit">
-          <span class="value" id="minutes">00</span>
-          <span class="label">Minutes</span>
-        </div>
-        <div class="unit">
-          <span class="value" id="seconds">00</span>
-          <span class="label">Seconds</span>
-        </div>
+        <figure class="photo reveal" data-delay="260ms">
+          <img src="photo.png" alt="A cherished moment of us together." />
+          <figcaption>Every memory with you feels like home.</figcaption>
+        </figure>
       </div>
+      <blockquote class="quote reveal" data-delay="620ms">“In all the world, there is no heart for me like yours.”</blockquote>
+      <p class="credit reveal" data-delay="720ms">— Maya Angelou</p>
 
-      <blockquote class="quote reveal" data-delay="520ms">“In all the world, there is no heart for me like yours.”</blockquote>
-      <p class="credit reveal" data-delay="620ms">— Maya Angelou</p>
-
-      <p class="note reveal" id="note" data-delay="720ms">Every moment between now and then belongs to us. I’m right here, waiting.</p>
+      <p class="note reveal" id="note" data-delay="820ms">Every moment between now and then belongs to us. I’m right here, waiting.</p>
     </section>
   </main>
 
