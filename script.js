@@ -46,6 +46,16 @@ function unlock() {
   veil.style.display = "none";
   content.setAttribute("aria-hidden", "false");
   localStorage.setItem("countdownUnlocked", "true");
+  if (content) {
+    content.classList.add("is-visible");
+    const revealEls = content.querySelectorAll(".reveal");
+    revealEls.forEach((el) => {
+      const delay = el.getAttribute("data-delay");
+      if (delay) {
+        el.style.setProperty("--delay", delay);
+      }
+    });
+  }
   if (loverName) {
     try {
       loverName.textContent = atob(encodedName);
