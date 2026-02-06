@@ -1,5 +1,6 @@
 const target = new Date("2026-02-09T10:00:00-06:00");
 const encodedPassword = "bG92ZXlvdQ=="; // "changeme" in base64. Replace with your own.
+const encodedName = "S3J1dGFuamFsaQ=="; // "Krutanjali" in base64.
 
 const countdownEls = {
   days: document.getElementById("days"),
@@ -14,6 +15,7 @@ const veil = document.getElementById("veil");
 const gate = document.getElementById("gate");
 const errorEl = document.getElementById("error");
 const passwordInput = document.getElementById("password");
+const loverName = document.getElementById("loverName");
 
 function format(value) {
   return String(value).padStart(2, "0");
@@ -43,6 +45,13 @@ function unlock() {
   veil.style.display = "none";
   content.setAttribute("aria-hidden", "false");
   localStorage.setItem("countdownUnlocked", "true");
+  if (loverName) {
+    try {
+      loverName.textContent = atob(encodedName);
+    } catch (_) {
+      loverName.textContent = "my love";
+    }
+  }
   updateCountdown();
 }
 

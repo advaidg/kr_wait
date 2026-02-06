@@ -86,6 +86,12 @@ h1 {
   margin-bottom: 32px;
 }
 
+.name {
+  font-family: var(--font-display);
+  color: var(--accent);
+  white-space: nowrap;
+}
+
 .countdown {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
