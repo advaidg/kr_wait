@@ -1,6 +1,6 @@
 const target = new Date("2026-02-09T10:00:00-06:00");
 const encodedPassword = "bG92ZXlvdQ=="; // "changeme" in base64. Replace with your own.
-const encodedName = "S3J1dGFuamFsaQ=="; // "Krutanjali" in base64.
+const encodedName = "S3J1dGFuamFsaQ=="; // 
 
 const countdownEls = {
   days: document.getElementById("days"),
@@ -16,6 +16,7 @@ const gate = document.getElementById("gate");
 const errorEl = document.getElementById("error");
 const passwordInput = document.getElementById("password");
 const loverName = document.getElementById("loverName");
+const loverNameWhisper = document.getElementById("loverNameWhisper");
 
 function format(value) {
   return String(value).padStart(2, "0");
@@ -50,6 +51,13 @@ function unlock() {
       loverName.textContent = atob(encodedName);
     } catch (_) {
       loverName.textContent = "my love";
+    }
+  }
+  if (loverNameWhisper) {
+    try {
+      loverNameWhisper.textContent = atob(encodedName);
+    } catch (_) {
+      loverNameWhisper.textContent = "my love";
     }
   }
   updateCountdown();

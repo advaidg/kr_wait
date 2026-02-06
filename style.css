@@ -125,6 +125,13 @@ h1 {
   margin: 18px 0 6px;
 }
 
+.whisper {
+  font-family: var(--font-display);
+  font-size: 1.05rem;
+  color: rgba(44, 36, 32, 0.75);
+  margin-bottom: 18px;
+}
+
 .credit {
   font-size: 0.95rem;
   opacity: 0.7;
