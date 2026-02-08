@@ -7,52 +7,57 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <div class="glow" aria-hidden="true"></div>
+  <div class="backdrop" aria-hidden="true"></div>
+  <div class="sparkles" aria-hidden="true"></div>
+
   <main class="scene" aria-live="polite">
     <section class="card" id="content" aria-hidden="true">
-      <p class="eyebrow">Monday • February 9, 2026 • 10:00 AM CT</p>
-      <h1>Counting Down Until You’re Here</h1>
-      <p class="subhead">Every second is a little closer to a hug I’ve been waiting for, <span class="name" id="loverName">my love</span>.</p>
+      <header class="hero">
+        <p class="eyebrow">Monday • February 9, 2026 • 10:00 AM CT</p>
+        <h1>Every heartbeat leads me to you</h1>
+        <p class="subhead">I’m counting the moments until we’re together again, <span class="name" id="loverName">my love</span>.</p>
+      </header>
 
-      <div class="hero">
-        <div class="gallery" aria-live="off">
-          <img class="slide is-front" id="slideA" alt="A cherished moment of us together." />
-          <img class="slide" id="slideB" alt="Another cherished moment of us together." />
-          <div class="gallery-overlay"></div>
-          <div class="dots" id="dots" aria-hidden="true">
-            <span class="dot is-active"></span>
-            <span class="dot"></span>
-          </div>
+      <section class="gallery" aria-live="off">
+        <img class="slide is-front" id="slideA" alt="A cherished moment of us together." />
+        <img class="slide" id="slideB" alt="Another cherished moment of us together." />
+        <div class="frame"></div>
+        <div class="caption">You + Me, always.</div>
+        <div class="dots" id="dots" aria-hidden="true">
+          <span class="dot is-active"></span>
+          <span class="dot"></span>
         </div>
+      </section>
 
-        <div class="countdown" id="countdown">
-          <div class="unit">
-            <span class="value" id="days">00</span>
-            <span class="label">Days</span>
-          </div>
-          <div class="unit">
-            <span class="value" id="hours">00</span>
-            <span class="label">Hours</span>
-          </div>
-          <div class="unit">
-            <span class="value" id="minutes">00</span>
-            <span class="label">Minutes</span>
-          </div>
-          <div class="unit">
-            <span class="value" id="seconds">00</span>
-            <span class="label">Seconds</span>
-          </div>
+      <section class="countdown" id="countdown">
+        <div class="unit">
+          <span class="value" id="days">00</span>
+          <span class="label">Days</span>
         </div>
-      </div>
+        <div class="unit">
+          <span class="value" id="hours">00</span>
+          <span class="label">Hours</span>
+        </div>
+        <div class="unit">
+          <span class="value" id="minutes">00</span>
+          <span class="label">Minutes</span>
+        </div>
+        <div class="unit">
+          <span class="value" id="seconds">00</span>
+          <span class="label">Seconds</span>
+        </div>
+      </section>
 
-      <div class="love-note">
-        <p><span class="name" id="loverNameWhisper">My love</span>, from the moment I wake up to the moment I close my eyes, it’s always you. I’m counting every heartbeat until I get to hold you.</p>
-      </div>
+      <section class="letter">
+        <p class="script">To my <span class="name" id="loverNameWhisper">love</span>,</p>
+        <p>I miss you in the quiet moments and in the loud ones too. Every sunrise gets me closer to your smile. I’m saving my best hug for you.</p>
+        <p class="signature">— Always yours</p>
+      </section>
 
       <blockquote class="quote">“In all the world, there is no heart for me like yours.”</blockquote>
       <p class="credit">— Maya Angelou</p>
 
-      <p class="note" id="note">Every moment between now and then belongs to us. I’m right here, waiting.</p>
+      <p class="note" id="note">I’m right here, waiting.</p>
     </section>
   </main>
 
