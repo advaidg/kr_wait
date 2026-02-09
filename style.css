@@ -176,6 +176,10 @@ h1 {
   margin-bottom: 26px;
 }
 
+.card.is-done .countdown {
+  display: none;
+}
+
 .final-banner {
   display: none;
   margin: 0 0 24px;
